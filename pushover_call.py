@@ -28,7 +28,7 @@ class PushoverCall:
         if not server_ip:
             print("Unable to send notification due to missing IP.")
             return
-        message = f"The {door_name} has been open for 30 minutes during restricted hours. Close it?"
+        message = f"The {door_name} has been open for 20 minutes during restricted hours. Close it?"
         response = requests.post(
             "https://api.pushover.net/1/messages.json",
             data={
